@@ -1,0 +1,3 @@
+cat  -> Muestra el contenido de un archivo desde la terminal
+nano -> Editor de texto desde terminal linux
+ls   -> Ver los directorios desde la terminal
