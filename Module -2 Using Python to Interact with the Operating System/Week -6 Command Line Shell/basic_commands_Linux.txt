@@ -1,0 +1,16 @@
+echo  -> Imprimir mensajes en la pantalla.
+cat   -> Mostrar el contenido de los archivos por pantalla.
+ls    -> Ver los contenidos de un directorio.
+chmod -> Cambiar los permisos de un archivo.
+mkdir -> Crear un nuevo directorio.
+cd    -> Cambiar de directorio.
+pwd   -> Imprimir la ruta actual del directorio.
+cp    -> Copiar.
+touch -> Crea un archivo vacio.
+ls-l  -> Ver ficheros y sus permisos.
+ls-la -> Ver ficheros y sus permisos ademas de los ocultos.
+mc    -> Mover ficheros.
+rm    -> Eliminar si ponemos * elimina todo.
+rmdir -> Eliminar directorios
+cd .. -> Moverse a un directorio anterior.
+

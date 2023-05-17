@@ -1,0 +1,15 @@
+Pruebas de caja negra:
+
+Las pruebas de caja negra se centran en examinar el funcionamiento externo de un sistema sin conocer los detalles internos de su implementación.
+Estas pruebas se realizan desde la perspectiva del usuario o cliente, sin tener acceso directo al código fuente.
+El objetivo principal de las pruebas de caja negra es evaluar el comportamiento funcional del sistema, comprobando si cumple con los requisitos especificados.
+Los detalles internos del sistema no son relevantes en las pruebas de caja negra. Se prueba el sistema como una "caja negra" en la que se conocen las entradas y se evalúan las salidas y el comportamiento esperado.
+Las técnicas comunes utilizadas en las pruebas de caja negra incluyen la especificación de casos de prueba basados en requisitos, técnicas de partición de equivalencia y análisis de valores límite.
+Pruebas de caja blanca:
+
+Las pruebas de caja blanca se enfocan en examinar y evaluar la estructura interna y la lógica del código fuente de un sistema o componente.
+Estas pruebas se realizan teniendo en cuenta el conocimiento de cómo está implementado el sistema y cómo funcionan sus componentes internos.
+El objetivo principal de las pruebas de caja blanca es verificar la funcionalidad y la lógica interna del código, asegurando que todas las rutas de ejecución y condiciones sean probadas exhaustivamente.
+Se analiza la estructura del código, se prueban los caminos de ejecución, las decisiones lógicas y las condiciones límite para garantizar una cobertura completa.
+Las técnicas comunes utilizadas en las pruebas de caja blanca incluyen la cobertura de código, el análisis estático, la revisión de código y la ejecución de pruebas unitarias.
+En resumen, las pruebas de caja negra se enfocan en el comportamiento externo del sistema sin tener en cuenta los detalles internos, mientras que las pruebas de caja blanca se centran en examinar y evaluar la estructura y lógica interna del código fuente. Ambos enfoques son importantes y complementarios para garantizar la calidad del software.

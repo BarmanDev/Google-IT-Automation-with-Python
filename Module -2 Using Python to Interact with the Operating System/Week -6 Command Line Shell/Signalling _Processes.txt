@@ -1,0 +1,25 @@
+El término "Signal" (señal) en el contexto de los procesos de Linux se refiere a un mecanismo de comunicación y control utilizado
+por el sistema operativo para notificar eventos o condiciones específicas a un proceso. Una señal es un mensaje asincrónico enviado
+a un proceso para indicar un evento o una acción que ha ocurrido.
+
+Las señales pueden ser generadas por el sistema operativo, como respuesta a eventos como errores, interrupciones del sistema, terminación de un proceso, etc. También pueden ser generadas por otros procesos, permitiendo la comunicación y sincronización entre procesos.
+
+Algunas señales comunes en Linux incluyen:
+
+SIGINT (2): 
+Generado cuando se presiona la combinación de teclas Ctrl+C en una terminal. Generalmente se utiliza para solicitar 
+la interrupción de un programa en ejecución.
+
+SIGKILL (9): 
+Señal utilizada para terminar abruptamente un proceso.
+No puede ser capturada o ignorada, y el proceso se termina inmediatamente.
+
+SIGTERM (15):
+Señal utilizada para solicitar la terminación ordenada de un proceso. 
+Permite que el proceso realice cualquier limpieza necesaria antes de finalizar.
+
+SIGSTOP (19) y SIGCONT (18):
+Señales utilizadas para suspender y reanudar un proceso, respectivamente.
+Existen muchas más señales disponibles en Linux, cada una con su propósito y significado específicos.
+Los procesos pueden manejar o ignorar señales, y también pueden enviar señales a otros procesos utilizando la función kill en C
+o el comando kill en la línea de comandos.

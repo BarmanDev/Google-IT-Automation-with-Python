@@ -1,0 +1,9 @@
+
+user@ubuntu:~$ ./calculator.py > result.txt 
+Se utiliza > para escribir la salida de un comando en un archivo, sobrescribiendo el archivo si ya existe.
+
+user@ubuntu:~$ ./calculator.py >> result.txt
+Se utiliza >> para agregar la salida de un comando al final de un archivo existente. La redirección
+
+user@ubuntu:~$ ./calculator.py < result.txt
+Se utiliza < para proporcionar la entrada de un archivo en lugar de ingresarla por la línea de comandos.

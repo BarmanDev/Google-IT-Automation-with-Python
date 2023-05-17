@@ -1,0 +1,2 @@
+$ chmod +x rearrange_test.py
+./rearrange_test.py

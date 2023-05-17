@@ -1,0 +1,10 @@
+En Linux, los pipes (tuberías) son una característica muy útil que permite conectar la salida de un programa con la entrada de otro programa, creando así una secuencia de comandos.
+Esto permite realizar operaciones complejas y procesamiento de datos de manera eficiente.
+
+Supongamos que tienes un archivo de texto llamado "datos.txt" que contiene una lista de nombres, uno por línea, y deseas filtrar
+solo los nombres que comienzan con la letra "A". Puedes lograrlo utilizando los comandos "cat", "grep" y "sort" en conjunto
+mediante pipes.
+
+cat datos.txt | grep "^A" | sort
+
+Al combinar estos comandos con pipes, podemos mostrar los nombres que comienzan con "A" y ordenarlos alfabéticamente
