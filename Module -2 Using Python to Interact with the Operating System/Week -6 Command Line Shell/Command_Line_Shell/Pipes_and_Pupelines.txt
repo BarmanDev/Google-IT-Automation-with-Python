@@ -1,0 +1,43 @@
+En Linux, los pipes (tuberías) son una característica muy útil que permite conectar la salida de un programa con la entrada de otro programa, creando así una secuencia de comandos.
+Esto permite realizar operaciones complejas y procesamiento de datos de manera eficiente.
+
+Supongamos que tienes un archivo de texto llamado "datos.txt" que contiene una lista de nombres, uno por línea, y deseas filtrar
+solo los nombres que comienzan con la letra "A". Puedes lograrlo utilizando los comandos "cat", "grep" y "sort" en conjunto
+mediante pipes.
+
+cat datos.txt | grep "^A" | sort
+
+Al combinar estos comandos con pipes, podemos mostrar los nombres que comienzan con "A" y ordenarlos alfabéticamente
+
+
+Gestión de flujos
+Estos son los redirectores que podemos utilizar para tomar el control de los streams de nuestros programas
+
+command > file: redirige la salida estándar, sobrescribe el archivo
+
+command >> file: redirige la salida estándar, añade al archivo
+
+comando < fichero: redirige la entrada estándar desde el fichero
+
+comando 2> archivo: redirige el error estándar a archivo
+
+comando1 | comando2: conecta la salida del comando1 a la entrada del comando2
+
+Operar con procesos
+Estos son algunos comandos que es útil conocer en Linux cuando se interactúa con procesos. No todos están explicados en los vídeos, así que siéntete libre de investigarlos por tu cuenta.
+
+ps: lista los procesos que se están ejecutando en el terminal actual para el usuario actual
+
+ps ax: lista todos los procesos que se están ejecutando actualmente para todos los usuarios
+
+ps e: muestra el entorno de los procesos listados
+
+kill PID: envía la señal SIGTERM al proceso identificado por PID
+
+fg: hace que un trabajo que estaba detenido o en segundo plano vuelva al primer plano
+
+bg: hace que un trabajo que estaba detenido pase a segundo plano
+
+jobs: lista los trabajos actualmente en ejecución o parados
+
+top: muestra los procesos que actualmente consumen más tiempo de CPU (pulse "q" para salir)

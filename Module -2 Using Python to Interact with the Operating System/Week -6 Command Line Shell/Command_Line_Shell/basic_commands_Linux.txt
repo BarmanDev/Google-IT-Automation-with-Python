@@ -1,0 +1,85 @@
+echo  -> Imprimir mensajes en la pantalla.
+cat   -> Mostrar el contenido de los archivos por pantalla.
+ls    -> Ver los contenidos de un directorio.
+chmod -> Cambiar los permisos de un archivo.
+mkdir -> Crear un nuevo directorio.
+cd    -> Cambiar de directorio.
+pwd   -> Imprimir la ruta actual del directorio.
+cp    -> Copiar.
+touch -> Crea un archivo vacio.
+ls-l  -> Ver ficheros y sus permisos.
+ls-la -> Ver ficheros y sus permisos ademas de los ocultos.
+mc    -> Mover ficheros.
+rm    -> Eliminar si ponemos * elimina todo.
+rmdir -> Eliminar directorios
+cd .. -> Moverse a un directorio anterior.
+
+
+Hoja de trucos de comandos básicos de Linux
+Esta lista incluye un montón de comandos diferentes que son útiles de conocer cuando se trabaja con Linux. No todos estos comandos están cubiertos en los videos, así que siéntete libre de investigarlos por tu cuenta.
+
+Gestión de archivos y directorios
+cd directorio: cambia el directorio de trabajo actual al especificado
+
+pwd: imprime el directorio de trabajo actual
+
+ls: muestra el contenido del directorio actual
+
+ls directorio: muestra el contenido del directorio recibido
+
+ls -l: lista la información adicional del contenido del directorio
+
+ls -a: lista todos los archivos, incluidos los ocultos
+
+ls -la: aplica las opciones -l y -a
+
+mkdir directorio: crea el directorio con el nombre recibido
+
+rmdir directorio: borra el directorio con el nombre recibido (si está vacío)
+
+cp nombre_antiguo nombre_nuevo: copia nombre_antiguo en nombre_nuevo
+
+mv nombre_antiguo nombre_nuevo: mueve nombre_antiguo a nombre_nuevo
+
+touch nombre_archivo: crea un archivo vacío o actualiza la hora de modificación si existe
+
+chmod modificadores ficheros: cambia los permisos de los ficheros según los modificadores proporcionados; hemos visto +x para hacer el fichero ejecutable
+
+chown usuario ficheros: cambia el propietario de los ficheros al usuario dado
+
+chgrp group files: cambia el grupo de los ficheros al grupo indicado
+
+Operar con el contenido de los ficheros
+cat fichero: muestra el contenido del fichero a través de la salida estándar
+
+wc fichero: cuenta la cantidad de caracteres, palabras y líneas del fichero dado; también puede contar los mismos valores de lo que reciba por stdin
+
+file fichero: imprime el tipo del fichero dado, tal como lo reconoce el sistema operativo
+
+head fichero: muestra las 10 primeras líneas del fichero dado
+
+tail file: muestra las 10 últimas líneas del fichero dado
+
+less file: recorre el contenido del fichero dado (pulse "q" para salir)
+
+sort file: ordena las líneas del fichero alfabéticamente
+
+cut -dseparator -ffields file: para cada línea del fichero dado, divide la línea según el separador dado e imprime los campos dados (empezando por 1)
+
+Comandos adicionales
+echo "mensaje": imprime el mensaje en la salida estándar
+
+date: imprime la fecha actual
+
+who: imprime la lista de usuarios conectados actualmente al ordenador
+
+comando man: muestra la página de manual del comando dado; las páginas de manual contienen mucha información que explica cómo utilizar cada comando (pulse "q" para salir)
+
+uptime: muestra cuánto tiempo lleva funcionando el ordenador
+
+free: muestra la cantidad de memoria no utilizada en el sistema actual
+
+Ver en DeepL.com
+Diccionario
+
+
