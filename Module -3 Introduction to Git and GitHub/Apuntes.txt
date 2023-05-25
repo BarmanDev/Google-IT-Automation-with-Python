@@ -1,0 +1,112 @@
+git config --global user.email "me@email.com"
+git config --global user.name "My name" 
+
+git init -> Iniciar un repositorio.
+git clone -> Clonar un repositorio.
+git add hello_world.py -> añadimos al proyecto el fichero.
+git commit "Primer commit" -> Añadir información para poder ver los archivos y cambios en un futuro.
+git status -> Para ver los cambios pendientes del arbol de trabajo.
+
+Estados principales de un archivo modificado:
+    Modified  -> El archivo fue modificado.
+    Staged    -> El archivo está preparado para ser confirmados para la proxima confirmacion.
+    Committed -> El archivo está confirmado en el historial de git.
+
+Es muy importante hacer una descripcion concisa del commit para que futuros desarrolladores o tu mismo sepas del proyecto y sus cambios.
+git log -> Ver todos los commits
+git log -u -> Ver todos los cambios ademas monstrando las difernecias para ver la evolucion del repositorio
+git log --stat -> Ver todos los cambios de forma más general .
+
+git commit -a -m "Añadiendo una funcionalidad" -> permite hacer el commit sin la necesidad de hacer el add (lo hace el -a)
+
+git diff -> Ves los cambios de código en color verde .
+
+git add -p -> Vemos los cambios y confirmarmos si estamos de acuerdo con y al dar y los añade.
+
+git rm calc.py  -> Elimina el archivo git 
+git mv disk_usage.py check_free_space.py -> Cambia el nombre del archivo.
+
+gitignore -> Ignorar archivos que no queramos (contraseñas ejecutables archivos del IDE...)
+git checkout commit_id -- hello.py -> recupera el archivo a la versión anterior.
+git restore hello.py -> Recuepera a una versión anterior.
+git resert HEAD hello.py  -> Quita el area de preparación.
+git commit --amend -> Sobrescribe el anterior commit 
+
+#Rollbaks
+
+git revert HEAD -> hace un rollbak buena practica comentar el motivo del rollbak en el commit
+git show (id del log) -> mira los commit anteriores
+git reverse -> Hace un Rollbak a un commit anteroir
+
+
+# Branching and Merging
+
+git branch -> Ver las ramas y en que rama estas.
+git branch new-feactures -> Crear una rama.
+git branch -d new-feacture -> Elimina la rama 
+git checkout -b even-better-feature  ->Crea una nueva rama y te mueve a dicha rama
+
+# fusionar ramas
+
+git branch -> mirar que estamos en la rama principal.
+gitt merge even-better-feacture -> Hace una fusión rapida 
+git log --graph --oneline -> Para ver el registro de commits
+git branch -d -> Elimina la rama local
+
+
+# GITHUB
+
+Git clone -> se utiliza para clonar un repositorio remoto en un espacio de trabajo local
+Git push -> se usa para enviar commits desde tu repositorio local a un repositorio remoto
+Git pull -> se usa para obtener las últimas actualizaciones de un repositorio remoto
+
+git remote -v -> Permite ver los repositorios remotos 
+git remote show origin -> Ver el repositorio remoto
+
+git fetch -> Recuperar los cambios más recientes del repositorio remoto si estamos deacuerdo podemos hacer git merge para integrarlos a la rama local
+
+git rebase -> Combina los cambios de una rama a otra aplicando los cambios de la rama.
+
+git rebase origin/master -> Realiza un rebase de la rama actual sobre la rama "origin/master".
+
+
+# BUENAS PRACTICAS
+
+1. Realiza commits atómicos: 
+Haz commits con cambios relacionados y en unidades lógicas. Esto facilitará la revisión y comprensión de los cambios por parte de otros colaboradores.
+
+2. Escribe mensajes de commit descriptivos: 
+Proporciona mensajes claros y concisos que expliquen el propósito de los cambios realizados en el commit. 
+Esto ayudará a otros desarrolladores a comprender el contexto y facilitará la búsqueda de información en el futuro.
+
+3. Utiliza ramas separadas para cada funcionalidad o tarea: 
+Crea ramas específicas para desarrollar nuevas características o solucionar problemas. 
+Esto permitirá un desarrollo aislado y una fácil integración posterior mediante fusiones (merges) o rebases.
+
+4. Mantén el repositorio actualizado: 
+Realiza con regularidad "git pull" o "git fetch" para obtener los últimos cambios del repositorio remoto. 
+Esto evitará conflictos innecesarios y te mantendrá sincronizado con el trabajo de otros colaboradores.
+
+5.Resuelve conflictos de fusión de manera adecuada: 
+Si al fusionar ramas surgen conflictos, resuélvelos de manera oportuna y efectiva. 
+Examina cuidadosamente los cambios y comunícate con otros colaboradores si es necesario. 
+Utiliza herramientas como "git mergetool" para ayudarte a resolver conflictos de manera visual.
+
+6. Utiliza ramas de revisión o pull requests: 
+En lugar de fusionar directamente tus ramas en la rama principal, considera utilizar ramas de revisión o pull requests. 
+Esto permitirá una revisión de código más rigurosa y facilitará el seguimiento y documentación de los cambios realizados.
+
+7. Mantén un archivo .gitignore adecuado:
+Configura y actualiza correctamente el archivo .gitignore para evitar subir al repositorio archivos innecesarios, como archivos generados por el sistema, dependencias o información confidencial.
+
+8. Comunícate y colabora con el equipo: 
+Mantén una comunicación efectiva con otros colaboradores del repositorio. 
+Utiliza herramientas de comunicación como comentarios en pull requests, chats o correos electrónicos para discutir ideas, resolver problemas y mantener a todos informados sobre el estado del proyecto.
+
+9. Documenta el proyecto: 
+Proporciona documentación clara y completa sobre el proyecto, como instrucciones de instalación, configuración y uso. 
+Esto ayudará a nuevos colaboradores a involucrarse rápidamente y comprender mejor el proyecto.
+
+10. Realiza pruebas y asegura la calidad del código: 
+Antes de hacer un commit o una fusión, asegúrate de que el código esté probado y de alta calidad. 
+Utiliza herramientas de pruebas automatizadas y realiza revisiones de código para garantizar la estabilidad y el correcto funcionamiento del proyecto.
