@@ -1,7 +1,7 @@
 
 # Google IT Automation with Python Professional Certificate
 
-## Que aprenderas
+## Que aprenderás
 
 - Automatizar tareas escribiendo scripts en Python
 - Administrar recursos de TI a gran escala, tanto para máquinas físicas como para máquinas virtuales en la nube
